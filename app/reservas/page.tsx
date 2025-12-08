@@ -1,7 +1,7 @@
 
 export default function Reservas() {
   return (
-    <form className="container mr-3 ml-3 content-center">
+    <form className="container mr-3 ml-3 content-center dark: text-white">
       <div className="space-y-12">
         <div className="border-b border-gray-900/10 pb-12">
           <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
