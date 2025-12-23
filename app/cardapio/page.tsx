@@ -1,8 +1,18 @@
 'use client';
+
 import { useState, useEffect } from 'react';
 
-export default function CardapioComFiltro() {
-  const [items, setItems] = useState([]);
+type ItemCardapio = {
+  id: number;
+  nome: string;
+  descricao: string;
+  preco: string;
+  imagem: string;
+  categoria: number;
+  categoria_nome: string;
+};
+
+  const [items, setItems] = useState<ItemCardapio[]>([]);
   const [categoriaAtiva, setCategoriaAtiva] = useState('Todos');
   const [carregando, setCarregando] = useState(true);
 
