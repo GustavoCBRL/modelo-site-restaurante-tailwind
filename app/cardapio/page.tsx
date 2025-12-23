@@ -12,6 +12,7 @@ type ItemCardapio = {
   categoria_nome: string;
 };
 
+export default function CardapioPage() {
   const [items, setItems] = useState<ItemCardapio[]>([]);
   const [categoriaAtiva, setCategoriaAtiva] = useState('Todos');
   const [carregando, setCarregando] = useState(true);
